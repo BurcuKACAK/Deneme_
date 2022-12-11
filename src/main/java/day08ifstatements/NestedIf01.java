@@ -28,7 +28,7 @@ public class NestedIf01 {
 
                Boolean ucgenmi = (a+b>c && c>Math.abs(a-b)) && (a+c>b && b>Math.abs(a-c)) && (b+c>a && a>Math.abs(b-c));
 
-
+        System.out.println("...");
 
 
     }
