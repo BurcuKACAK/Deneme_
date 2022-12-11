@@ -1,6 +1,6 @@
 package denemesorucozumu;
 
-public class OuestionBank1 {
+public class OuestionBank02 {
     public static void main(String[] args) {
         //Double data tipinde bir değişken oluşturunuz ve onu bir short değişkenine dönüştürünüz.
         //Sonrasında bu short değişkenin değerini konsolda yazdırınız.
@@ -30,26 +30,28 @@ public class OuestionBank1 {
         //yine data tipi String olan “2351” değerini short data tipine dönüştürüp konsolda iki
         //değişken arasındaki farkı yazdırınız
 
-        byte f = Byte.valueOf("103");
-        short f1 =Short.valueOf("2351");
-        System.out.println(f1 - f);
+        String m = "103";
+        byte m1= Byte.valueOf(m);
+        String n = "2351";
+        short n1 = Short.valueOf(n);
+        System.out.println(n1-m1);
+
 
         //Sadece tek bir kelimeden oluşan şehir isimleri için bir String değişkeni oluşturun. Şehir
         //ismini, baş harfi büyük ve diğer tüm karakterleri küçük harfler olacak şekilde konsolda
         //yazdırınız.
 
-        String sehir = "   anKAra";
 
+        String sehir = "  anKAra  ";
         String sehir1 = sehir.trim().toLowerCase();
         sehir1 = sehir1.substring(0,1).toUpperCase()+sehir1.substring(1);
-
         System.out.println(sehir1);
 
-        String sehir2= "  kaySERi  ";
-        String sehir3 =sehir2.trim().toLowerCase();
+        String sehir2 = "  MiAmI ";
+        String sehir3 = sehir2.trim().toLowerCase();
         sehir3 = sehir3.substring(0,1).toUpperCase()+sehir3.substring(1);
-
         System.out.println(sehir3);
+
 
         //Kişi isimleri için 3 String değişken oluşturunuz. Boşluk karakterleri hariç 3 isimdeki
         //karakter sayısının toplamını yazdırınız.

@@ -2,7 +2,7 @@ package denemesorucozumu;
 
 import java.util.Scanner;
 
-public class QuestionBank {
+public class QuestionBank01 {
     public static void main(String[] args) {
 
         // Kullanicinin girdigi 2 tam sayiyi degistiriniz
