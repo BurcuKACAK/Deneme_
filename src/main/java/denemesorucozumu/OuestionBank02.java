@@ -100,10 +100,43 @@ public class OuestionBank02 {
         //Örnek:'Ali Can' için n yazdırmalısınız.
         // ‘Miami’ için i yazdırmalısınız
 
-        String s = " Miami ";
-        int a =s.trim().length()-1;
-        String boslukOlmayanSonKrk = s.substring(a, a +1);
+        String s = "Miami ";
+        int boslukOlmayanSonKrkIndex= s.trim().length()-1;
+        String boslukOlmayanSonKrk = s.substring(boslukOlmayanSonKrkIndex,
+                boslukOlmayanSonKrkIndex +1);
         System.out.println("Bosluk olmayan son karakter: " + boslukOlmayanSonKrk);
+
+        String q = " Miami ";
+        int a =q.trim().length()-1;
+        String q1 = s.substring(a, a +1);
+        System.out.println("Bosluk olmayan son karakter: " + q1);
+
+        String k = "Ali Can  ";
+        int k1 = k.trim().length()-1;
+        String k2 =k.substring(k1,k1+1);
+
+        System.out.println("Bosluk Olmayan Son Karakter=" + k2);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

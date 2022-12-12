@@ -28,7 +28,29 @@ public class NestedIf01 {
 
                Boolean ucgenmi = (a+b>c && c>Math.abs(a-b)) && (a+c>b && b>Math.abs(a-c)) && (b+c>a && a>Math.abs(b-c));
 
+             if (a<=0 || b <=0 || c<=00){
+                 System.out.println("Lutfen gecerli bir deger giriniz");
+             }
 
+              if(ucgenmi){
+                  if (a==b && b==c && c==a){
+                      System.out.println("Eskenar Ucgen");}
+                  else if (a==b || b==c || c==a){
+                      System.out.println("Ikizkenar Ucgen");}
+                  else if (ucgenmi){
+                      System.out.println("Cesitkenar Ucgen");
+                  }
+                  else {
+                      System.out.println("Ucgen Degil");
+                  }
+
+              }
+
+
+
+
+               }
 
     }
-}
+
+
