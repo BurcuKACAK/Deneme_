@@ -19,37 +19,39 @@ public class NestedIf01 {
            a=b=c ise eskenar ucgen
          */
 
-        Scanner input =  new Scanner(System.in);
-        System.out.println("Please enter three positive integer for side length");
+        Scanner input = new Scanner(System.in);
+        System.out.println("Ucgenin Kenarlari Icin 3 Adet Uzunluk Giriniz:");
 
-               double a = input.nextDouble();
-               double b = input.nextDouble();
-               double c = input.nextDouble();
+        //Kullanici yanlislikla negatif sayi girdi ise kod asagidaki gibi yazilabilir.
+//        double a = Math.abs(input.nextDouble());
+//        double b = Math.abs(input.nextDouble());
+//        double c = Math.abs(input.nextDouble());
 
-               Boolean ucgenmi = (a+b>c && c>Math.abs(a-b)) && (a+c>b && b>Math.abs(a-c)) && (b+c>a && a>Math.abs(b-c));
+        double a = input.nextDouble();
+        double b = input.nextDouble();
+        double c = input.nextDouble();
+        boolean ucgenmi = (a+b>c && c>Math.abs(a-b)) && (a+c>b && b>Math.abs(a-c)) && (b+c>a && a>Math.abs(b-c));
 
-             if (a<=0 || b <=0 || c<=00){
-                 System.out.println("Lutfen gecerli bir deger giriniz");
-             }
+        //Kullanicinin negatif sayi girmesini affetmiyorum
+        if(a<=0 || b<=0 || c<=0){
 
-              if(ucgenmi){
-                  if (a==b && b==c && c==a){
-                      System.out.println("Eskenar Ucgen");}
-                  else if (a==b || b==c || c==a){
-                      System.out.println("Ikizkenar Ucgen");}
-                  else if (ucgenmi){
-                      System.out.println("Cesitkenar Ucgen");
-                  }
-                  else {
-                      System.out.println("Ucgen Degil");
-                  }
+            System.out.println("Ucgenin kenarlari negatif olamaz");
 
-              }
+        }else if(ucgenmi){
 
+            if(a==b && b==c && a==c){
+                System.out.println("Ucgen hem de eskenar ucgen...");
+            }else{
+                System.out.println("Ucgen ama eskenar degil...");
+            }
+
+        }else{
+            System.out.println("Sen ucgen degilsin...");
+        }
 
 
 
-               }
+    }
 
     }
 
