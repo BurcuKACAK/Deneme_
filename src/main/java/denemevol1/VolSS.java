@@ -11,11 +11,11 @@ public class VolSS {
         String  y = input.nextLine();
 
         if (y.equalsIgnoreCase("Hira")){
-            System.out.println("Hirayi Yaparsam Javayi Yapamam");}
-
-        else  {
-            System.out.println("Javayi Yaparsam Hirayi Yapamam \nTarafini  sec :)");
-
-        }
+            System.out.println("Hirayi Yaparsam Javayi Yapamam \nTarafini  sec :)");}
+        else if (y.equalsIgnoreCase("Java")){
+            System.out.println("Javayi Yaparsam Hirayi Yapamam \nTarafini  sec :)");}
+            else {
+            System.out.println("Lutfen gecerli bir deger giriniz. \nYoksa ayvayi yersiniz :D");
+        }}
     }
-}
+
